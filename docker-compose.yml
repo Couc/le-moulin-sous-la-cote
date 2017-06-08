@@ -1,0 +1,8 @@
+web:
+  build: web
+  container_name: le-moulin-sous-la-cote.perso.docker
+  volumes:
+    - ./web/app:/var/www/html
+  environment:
+    DNSDOCK_IMAGE: perso
+    DNSDOCK_NAME: le-moulin-sous-la-cote
